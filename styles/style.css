@@ -22,10 +22,31 @@
 
 
 
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
 
+/* header logo */
+svg {
+	fill:grey;
+}
+
+header {
+	display: flex;
+}
+
+
+main img {
+	height: auto;
+	width: 100vw;
+}
+
+h1 h2 h3 {
+	display: flex;
+}
+
+main button {
+	display: flex;
+}
