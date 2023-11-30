@@ -7,16 +7,16 @@
 
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
 	--color-text:#111;
+	--color-text2:#eee;
 	--color-background:#eee;
+	--color-detail:rgb(69 86 162);
+	--color-header: #363636;
 }
 
 
@@ -28,23 +28,127 @@
 
 /* jouw code */
 
-/* header logo */
-svg {
-	fill:grey;
+/* over hele html */
+@font-face {
+	font-family: TekstFont;
+	src: url(/fonts/National2-Regular.otf);
 }
+
+
+/* &************** */
+/* header */
+/* ************************* */
 
 header {
 	display: flex;
+	position: relative;
+	border: solid black;
+	height: 3.4em;
+	padding: 0.5em;
+	background-color: var(--color-header);
+	z-index: 10;
 }
 
+/* header logo */
+header svg {
+	fill:grey;
+}
+
+header nav.open {
+	display: flex;
+	translate: 0;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	translate: -100% 0;
+	position: fixed;
+	padding:1em;
+  	align-content:start;
+  	gap:1em;
+	inset: 0;
+	background-color: var(--color-background);
+	transition: 0.5s;
+}
+
+header nav button {
+	all:unset;
+}
+
+
+/* ******** */
+/* ZOEKBALK */
+/* ******** */
+
+header form {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:3.4em;
+	z-index: -11;
+}
+
+header form.onderheader {
+	top: 3.4em;
+}
+
+header form input{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/* bodyodyodyody */
+
+body {
+	font-family: TekstFont;
+	margin:0;
+}
+
+main {
+	margin-top: 7em;
+}
 
 main img {
 	height: auto;
 	width: 100vw;
+	margin: -.5em;
 }
 
 h1 h2 h3 {
 	display: flex;
+}
+
+main a {
+	color: var(--color-text2);
+	background-color: var(--color-detail);
+	text-decoration: none;
+}
+
+main p:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-detail);
+	color: var(--color-text2);
+	text-transform: uppercase;
+}
+
+main p:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-detail);
+	color: var(--color-text2);
+}
+
+main section h2 {
+	color: var(--color-text);
+}
+
+main section p {
+	color: var(--color-text);
 }
 
 main button {
