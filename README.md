@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Helena Breteler
+  Sanne 't Hooft (vervangen door jouw naam)
 
   #### Je startniveau:
-  Blauw & rood
+  hier je startniveau (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  Surfaceplane
+  hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -37,15 +37,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.carhartt-wip.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="./ScreenshotHomOfficialCarharttWIP.png" width="17em" alt="home page">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="ScreenshotDetailpageCarharttWIPLandonPant.png" width="17em" alt="detail page. broek.">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -95,26 +94,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Michelle  
-  -----------
-  •⁠  ⁠animatie button (in zero state)
-  •⁠  ⁠elementen apart aanspreken, lukt vaak wel maar niet altijd
-  •⁠  ⁠opbouw zonder sections en div’jes te gebruiken vind ik nog moeilijk
- 
-  | Tess     
-  -----------
-  • Flexbox in de header, ik krijg bepaalde elementen niet zoals ik wil
-  • Typografie lukt niet op alle elementen 
-  •⁠  ⁠lastig om een opbouw te maken met weinig/geen div’s en classes
+  | student 1      | student 2          | student 3    | student 4        |
+  | ---            | ---                | ---          | ---              |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...            | ...                | ...          | ...              |
 
-  | Sabri
-  -----------
-  • Hoe moet ik weten welke goede momenten zijn om flexbox en grid toe te passen?
-  
-  | Helena       
-  -----------
-  • Hoe kan ik de navigatie uit het scherm krijgen?
-  • Hoe wekt svg?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
