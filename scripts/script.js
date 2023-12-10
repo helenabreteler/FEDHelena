@@ -28,12 +28,24 @@ function sluitMenu() {
 // zoek
 // ******////
 
-var deForm = document.querySelector("header form");
+// var deForm = document.querySelector("header form");
 
-var zoekButton = document.querySelector("header button:nth-of-type(4)");
-console.log(zoekButton);
-zoekButton.onclick = sluitOpenZoek;
+// var zoekButton = document.querySelector("header button:nth-of-type(4)");
+// console.log(zoekButton);
+// zoekButton.onclick = sluitOpenZoek;
 
-function sluitOpenZoek() {
-  deForm.classList.toggle("onderheader");
+// function sluitOpenZoek() {
+//   deForm.classList.toggle("onderheader");
+// }
+
+
+// sanne code //
+
+const zoekButton = document.querySelector("header > button");
+const zoekSection = document.querySelector("header > search");
+
+zoekButton.onclick = toggleSearch;
+
+function toggleSearch() {
+	zoekSection.classList.toggle("openzoek");
 }
