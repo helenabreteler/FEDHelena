@@ -101,7 +101,6 @@ header {
 	justify-items: center;
 	align-items: center;
 	
-
 	gap:1em;
 	position: relative;
 	height: 3.4375em;
@@ -168,7 +167,7 @@ header nav button svg {
 	fill: var(--color-header);
 }
 
-/* header search:first-of-type {
+header search:first-of-type {
 	position: absolute;
 	top:100%;
 	left:0;
@@ -177,7 +176,7 @@ header nav button svg {
 
 	transform-origin: center top;
 	scale:1 0;
-} */
+}
 
 
 /* ******** */
@@ -206,7 +205,7 @@ header form input{
 
 
 
-header search {
+/* header search {
 	position:absolute;
 	top:100%;
 	left:0;
@@ -222,18 +221,7 @@ header search {
 
 header search.openzoek {
 	scale:2 1;
-}
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 
 

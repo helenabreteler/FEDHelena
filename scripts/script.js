@@ -41,11 +41,11 @@ function sluitMenu() {
 
 // sanne code //
 
-const zoekButton = document.querySelector("header > button");
-const zoekSection = document.querySelector("header > search");
+// const zoekButton = document.querySelector("header > button");
+// const zoekSection = document.querySelector("header > search");
 
-zoekButton.onclick = toggleSearch;
+// zoekButton.onclick = toggleSearch;
 
-function toggleSearch() {
-	zoekSection.classList.toggle("openzoek");
-}
+// function toggleSearch() {
+// 	zoekSection.classList.toggle("openzoek");
+// }
