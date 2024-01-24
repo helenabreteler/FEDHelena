@@ -42,37 +42,37 @@
 
 @font-face {
 	font-family: TekstFont;
-	src: url(/fonts/National2-Regular.otf);
+	src: url(../fonts/National2-Regular.otf);
 }
 
 @font-face {
 	font-family: TekstFontBold;
-	src: url(/fonts/National2-Bold.otf);
+	src: url(../fonts/National2-Bold.otf);
 }
 
 @font-face {
 	font-family: TekstFontMedium;
-	src: url(/fonts/National2-Medium.otf);
+	src: url(../fonts/National2-Medium.otf);
 }
 
 @font-face {
 	font-family: KarlaMedium;
-	src:url(/fonts/Karla/static/Karla-Medium.ttf)
+	src:url(../fonts/Karla/static/Karla-Medium.ttf)
 }
 
 @font-face {
 	font-family: KarlaRegular;
-	src: url(/fonts/Karla/static/Karla-Regular.ttf);
+	src: url(../fonts/Karla/static/Karla-Regular.ttf);
 }
 
 @font-face {
 	font-family: KarlaBold;
-	src: url(/fonts/Karla/static/Karla-Bold.ttf);
+	src: url(../fonts/Karla/static/Karla-Bold.ttf);
 }
 
 @font-face {
 	font-family: KarlaLight;
-	src: url(/fonts/Karla/static/Karla-Light.ttf);
+	src: url(../fonts/Karla/static/Karla-Light.ttf);
 }
 
 body {
