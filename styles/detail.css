@@ -17,22 +17,22 @@
 
 @font-face {
 	font-family: KarlaRegular;
-	src: url(/fonts/Karla/static/Karla-Regular.ttf);
+	src: url(../fonts/Karla/static/Karla-Regular.ttf);
 }
 
 @font-face {
 	font-family: KarlaMedium;
-	src:url(/fonts/Karla/static/Karla-Medium.ttf)
+	src:url(../fonts/Karla/static/Karla-Medium.ttf)
 }
 
 @font-face {
 	font-family: KarlaBold;
-	src: url(/fonts/Karla/static/Karla-Bold.ttf);
+	src: url(../fonts/Karla/static/Karla-Bold.ttf);
 }
 
 @font-face {
 	font-family: KarlaLight;
-	src: url(/fonts/Karla/static/Karla-Light.ttf);
+	src: url(../fonts/Karla/static/Karla-Light.ttf);
 }
 
 
