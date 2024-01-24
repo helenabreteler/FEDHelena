@@ -60,10 +60,12 @@ function sluitMenu() {
 
 function createCaroCarrousel(carrouselID) {
 	var carrousel = document.querySelector("#"+carrouselID);
-  var carrouselElementsContainer = carrousel.querySelector(":scope > ul");
-	var carrouselElements = carrouselElementsContainer.querySelectorAll("li");
-  var linkButtons = carrousel.querySelectorAll(":scope > a");
-  
+
+  if(carrousel) {
+    var carrouselElementsContainer = carrousel.querySelector(":scope > ul");
+    var carrouselElements = carrouselElementsContainer.querySelectorAll("li");
+    var linkButtons = carrousel.querySelectorAll(":scope > a");
+  }
   
   /*****************************/
 	/* LINKS/RECHTS LINK-BUTTONS */
