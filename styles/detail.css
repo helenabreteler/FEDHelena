@@ -1,0 +1,759 @@
+:root {
+	/* startje */
+	--color-text:#262626;
+	--color-text2:#eee;
+	--color-text3:#8a8a8a;
+	--color-background:#eee;
+	--color-wit:#f1f1f1;
+	--color-detail:#3e53bb;
+	--color-header: #363636;
+
+	--link-color: #262626;
+ /* --link-visited-color: */
+    --link-background-color:#363636;
+    --link-active-color:#3e53bb;
+}
+
+
+@font-face {
+	font-family: KarlaRegular;
+	src: url(/fonts/Karla/static/Karla-Regular.ttf);
+}
+
+@font-face {
+	font-family: KarlaMedium;
+	src:url(/fonts/Karla/static/Karla-Medium.ttf)
+}
+
+@font-face {
+	font-family: KarlaBold;
+	src: url(/fonts/Karla/static/Karla-Bold.ttf);
+}
+
+@font-face {
+	font-family: KarlaLight;
+	src: url(/fonts/Karla/static/Karla-Light.ttf);
+}
+
+
+body {
+	font-family: KarlaRegular;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/* ****** */
+/* header */
+/* ****** */
+
+header button {
+	all: unset;
+}
+
+header nav button {
+	all: unset;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 5em 1fr 2em 2em;
+	gap:1em;
+	justify-items: center;
+	align-items: center;
+	
+	gap:1em;
+	position: relative;
+	height: 3.4375em;
+	width: 100%;
+	padding: 0.5em;
+	border: 0;
+	background-color: var(--color-header);
+	z-index: 10;
+}
+
+/* logo */
+header > svg:first-of-type {
+	height: 50%;
+	width: auto;
+}
+
+header svg {
+	fill: var(--color-wit);
+}
+
+header button {
+	height:100%;
+	aspect-ratio: 1/1;
+
+	display: grid;
+	place-content: center;
+}
+
+header > button:nth-of-type(1) {
+	order: -1;
+	justify-self: start;
+}
+
+header nav.open {
+	display: flex;
+	translate: 0;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	translate: -100% 0;
+	position: fixed;
+  	align-content:start;
+  	gap:1em;
+	inset: 0;
+	background-color: var(--color-background);
+	transition: 0.5s;
+}
+
+header nav ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	align-items: start;
+	justify-content: space-around;
+}
+
+header nav ul li a {
+	text-decoration: none;
+}
+
+
+
+/* sluit kruisje */
+header nav button svg {
+	fill: var(--color-header);
+}
+
+header search:first-of-type {
+	position: absolute;
+	top:100%;
+	left:0;
+	right:0;
+	padding:1em;
+
+	transform-origin: center top;
+	scale:1 0;
+}
+
+/* iconen nav flag */
+header nav img {
+	height: 1em;
+	width: 1em;
+	border-radius: 50%;
+}
+
+/* nav social media */
+
+header nav ul:first-of-type{
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr 1fr;
+}
+
+header nav ul:first-of-type li{
+	padding: 1em;
+	order: 1/1;
+	border: solid 1px;
+}
+
+header nav ul:nth-of-type(2) li{
+	border: solid 1px;
+	width: 100%;
+	padding: 1em;
+}
+
+header nav ul:first-of-type li:nth-of-type(1){
+	grid-column: 1;
+}
+
+header nav ul:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	
+}
+
+header nav ul:last-of-type {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+
+
+
+header nav ul:first-of-type li:nth-of-type(2){
+	grid-column: 3;
+}
+
+
+header nav ul:first-of-type li:nth-of-type(3){
+	grid-column: 4;
+}
+
+header nav ul:first-of-type li:nth-of-type(4){
+	grid-column: 5;
+}
+
+
+header ul:nth-of-type(2) {
+	display: flex;
+}
+
+/* last of type gebruikt om niet meer class te gebruiken */
+nav section:last-of-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25em;
+	padding: .5em;
+	border-top: solid 1px var(--color-text3);
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ************** */
+/****** main ******/
+/* ************** */
+
+/* main img:first-of-type {
+    width: 100vw;
+    height: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************ */
+
+/* carrousel */
+/* bron : https://codepen.io/shooft/pen/mdBOZLz */
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+      --maxWidth:32rem;
+  }
+  
+  body {
+      grid-template-columns: minmax(auto, var(--maxWidth));
+      justify-content:center;
+  }
+  
+    
+  /******************************/
+  /* DE CAROCARROUSEL CONTAINER */
+  /******************************/
+  
+  main section:first-of-type {
+      /* basis waarden die door de hele carrousel gebruikt worden */
+      /* kun je zelf aanpassen */
+      --caroCarrouselMainColor:#333;
+    --caroCarrouselAccentColor:#1b75b3;
+      --caroCarrouselShadeColor:#ddd9;
+  
+    position: relative;
+    overflow: hidden; /* om de linkbuttons te verbergen */
+      outline:none;
+  }
+  
+  /* dark mode */
+  @media (prefers-color-scheme: dark) {
+    main section:first-of-type {
+      --caroCarrouselMainColor:#ccc;
+      --caroCarrouselShadeColor:#4449;
+    }
+  }
+  
+  
+  /************************************/
+  /* de carrousel elementen container */
+  main section:first-of-type > ul {
+    margin: 0; padding: 0;
+    list-style: none;
+      display: flex;
+      
+      /* handmatig scrollen is mogelijk */
+      overflow: hidden;
+      
+      /* snappen als er gescrolled wordt - andere helft bij li */
+    scroll-snap-type: inline mandatory;
+    
+    /* smooth scrollen */
+      scroll-behavior: smooth;
+    
+    /* scrollbar zoveel mogelijk verbergen */
+    -webkit-overflow-scrolling: touch; /* voor iOS*/
+    -ms-overflow-style: none; /* voor IE */
+      scrollbar-width: none; /* voor firefox */
+  }
+  
+    main section:first-of-type > ul::-webkit-scrollbar {
+    /* scrollbar zoveel mogelijk verbergen */
+    display: none; /* voor chrome, safari en edge*/
+  }
+  
+  
+  /**************************/
+  /* de carrousel elementen */
+  main section:first-of-type > ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    /* snappen als er gescrolled wordt - andere helft bij ul */
+      scroll-snap-align:center;
+  }
+  
+  
+  /**********************************/
+  /* de carrousel elementen content */
+  
+  /* de stijlen voor jouw content hier */
+  main section:first-of-type > ul li > img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  /****************************/
+  /* PREV EN NEXT LINKBUTTONS */
+  /****************************/
+  main section:first-of-type > a {
+    position: absolute;
+    width: 3em;
+    aspect-ratio:1/1;
+      top: calc(50% - 1.5em);
+    
+    color: var(--caroCarrouselMainColor);
+    background-color: var(--caroCarrouselShadeColor);
+    outline: none;
+    box-shadow: inset 0 0 0 1px currentColor;
+      
+    display:grid;
+    place-items:center;
+    
+    transition: 0.5s;
+  }
+  
+  /* initieel staan de links "buiten beeld" */
+  main section:first-of-type > a[href="previous"] {
+    left:-3.5em;
+  }
+  main section:first-of-type > a[href="next"] {
+    right: -3.5em;
+  }
+  
+  /* bij hover en focus schuiven de links in beeld */
+  main section:first-of-type:hover > a[href="previous"],
+  main section:first-of-type:focus-within > a[href="previous"] {
+    left:.5em;
+  }
+  main section:first-of-type:hover > a[href="next"],
+  main section:first-of-type:focus-within > a[href="next"] {
+    right:.5em;
+  }
+  
+  /* prev en next linkbuttons pijltjes */
+  main section:first-of-type > a::before,
+  main section:first-of-type > a::after {
+    content: "";
+    position: absolute;
+    width: 1em; height: 4px;
+    background-color: currentColor;
+  }
+  
+  main section:first-of-type > a[href=previous]::before {
+      transform-origin: 2px center;
+      transform: translateY(0) rotate(45deg);
+  }
+  main section:first-of-type > a[href=previous]::after {
+      transform-origin: 2px center;
+      transform: translateY(0) rotate(-45deg);
+  }
+  
+  main section:first-of-type > a[href=next]::before {
+      transform-origin: calc(100% - 2px) center;
+      transform: translateY(0) rotate(45deg);
+  }
+  main section:first-of-type > a[href=next]::after {
+      transform-origin: calc(100% - 2px) center;
+      transform: translateY(0) rotate(-45deg);
+  }
+  
+  main section:first-of-type > a:hover,
+  main section:first-of-type > a:focus {
+    color: var(--caroCarrouselAccentColor);
+  }
+
+
+/* *********************************************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* broekkleur */
+main ul:nth-of-type(2) {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+main ul:nth-of-type(2) li {
+    padding: .2em;
+}
+
+main ul:nth-of-type(2) img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+
+/* *********** */
+/* add to card */
+/* *********** */
+
+
+main button:last-of-type {
+	background: none;
+	text-decoration: none;
+	border: none;
+	border-radius: 0.25em;
+
+	margin-top: 5em;
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+main button:last-of-type a {
+	font-family: KarlaMedium;
+	font-size: 1.2em;
+	color: var(--color-text2);
+	background-color: var(--color-header);
+	text-decoration: none;
+	
+	padding: 1em 2.5em;
+	margin: 1em 0em .5em 0em;
+	border-radius: 0.25em;
+}
+
+@keyframes ruzie-animation {
+    0% {
+      scale: 1;
+    }
+    100% {
+      scale: 2;
+    }
+  }
+
+  
+  /* de class ruzie wordt met JS toegevoegd (en weer verwijderd) */
+  /* nb. de JS 3-stap heb je gratis gekregen */
+  /* daar kun je natuurlijk nog wel even naar kijken */
+  button:first-of-type[aria-label="na klik"] {
+    animation-name:ruzie-animation;
+    animation-duration:.3s;
+    animation-iteration-count:infinite;
+  }
+  
+  button:first-of-type[aria-label="na klik"] {
+    animation-direction:reverse;
+  }
+
+
+
+
+
+
+
+
+/* show product info */
+main a:first-of-type {
+    color: var(--color-text3);
+}
+
+
+
+/* **************************** */
+/* eerste scroll kledingstukken */
+/* **************************** */
+
+main ul:nth-of-type(3) {
+	/* jouw code hier */
+	display:flex;
+	gap:0.5em;
+	overflow:auto;
+	
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+
+	padding: 0;
+  }
+
+main ul:nth-of-type(3) li {
+	list-style: none;
+	flex-basis: min(80%, 10em);
+  	flex-shrink:0;
+  	
+  	gap:.25em;
+  
+  	display:flex;
+  	flex-direction:column;
+}
+
+main ul:nth-of-type(3) li img {
+	/* object-fit: cover; */
+    width: 100%;
+    height:min(100vw, 12em);
+	border-radius: 1em;
+	order: -1;
+}
+
+main ul:nth-of-type(3) li h3, p {
+    margin: .5em;
+    font-size: 1em;
+}
+
+
+/* **************************** */
+/* tweede scroll kledingstukken */
+/* **************************** */
+
+/* main ul:nth-of-type(4) {
+	display:flex;
+	gap:0.5em;
+	overflow:auto;
+	
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+
+	padding: 0;
+  }
+
+main ul:nth-of-type(4) li {
+	list-style: none;
+	flex-basis: min(80%, 10em);
+  	flex-shrink:0;
+  	
+  	gap:.25em;
+  
+  	display:flex;
+  	flex-direction:column;
+}
+
+main ul:nth-of-type(4) li img {
+	object-fit: cover;
+    width: 100%;
+    height:min(100vw, 12em);
+	border-radius: 1em;
+    
+	order: -1;
+} */
+
+main ul:nth-of-type(4) {
+	/* jouw code hier */
+	display:flex;
+	gap:0.5em;
+	overflow:auto;
+	
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+
+	padding: 0;
+  }
+
+main ul:nth-of-type(4) li {
+	list-style: none;
+	flex-basis: min(80%, 10em);
+  	flex-shrink:0;
+  	
+  	gap:.25em;
+  
+  	display:flex;
+  	flex-direction:column;
+}
+
+main ul:nth-of-type(4) li img {
+	/* object-fit: cover; */
+    width: 100%;
+    height:min(100vw, 12em);
+	border-radius: 1em;
+	order: -1;
+}
+
+main ul:nth-of-type(4) li h3, p {
+    margin: .5em;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+/* ****** */
+/* footer */
+/* ****** */
+
+/* socials dingen */
+footer ul:first-of-type{
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-bottom:solid 1px var(--color-text3);
+}
+
+footer>ul:first-of-type li {
+	list-style: none;
+	margin: 0;
+	/* aspect-ratio: 1/1; */
+	width: 100%;
+	padding: 1.5em;
+	scale: 150%;
+	
+}
+
+footer ul:first-of-type li a {
+	/* background-color: red; */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: flex-start;
+	margin: 0;
+}
+
+footer form {
+	justify-content: center;
+}
+
+footer section:first-of-type ul {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom:solid 1px var(--color-text3);
+	margin-bottom: 10em;
+}
+
+
+
+footer section:first-of-type ul li a {
+	text-decoration: none;
+	color: #262626;
+	text-transform: uppercase;
+	font-size: 12px; /* bah */
+	font-family: KarlaMedium;
+	/* background-color: red; */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	/* align-items: center; */
+	padding: .75em 1em;
+}
+
+/* newsletter */
+footer form {
+	background-color: var(--color-detail);
+	
+	border-style: solid;
+	border: 1em;
+	
+	padding: 1em;
+	padding-left: auto;
+	padding-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+footer h4,
+footer form input {
+	width: min(100%, 20rem);
+}
+
+footer h4 {
+	color: var(--color-text2);
+	font-family: karlalight;
+	font-size: 0.875em;
+	margin: .75em;
+	margin-top: 0;
+}
+
+footer form input {
+	border-radius: .25em;
+	border-style: none;
+	border-width: .125em;
+	border-color: #000;
+	font-family: KarlaRegular;
+	padding:1em;
+	margin: .5em 0;
+}
+
+footer form input:nth-of-type(2) {
+	font-family: KarlaMedium;
+	color: var(--color-text2);
+	background-color: #000000;
+}
+
+/* logo gebeuren ding */
+footer section:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .5em;
+
+	padding: 2.5em 3.5em;
+
+	font-family: KarlaMedium;
+	font-size: .75em;
+	background-color: var(--color-background);
+}
