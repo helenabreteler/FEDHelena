@@ -37,16 +37,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  
   https://www.carhartt-wip.com/en/men-pants-work/simple-pant-blue-light-true-washed-1817_1
+  
   https://www.carhartt-wip.com/en/men-pants-work/simple-pant-blue-light-true-washed-1817_1
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="home pagina van carhartt">
+  <img src="ScreenshotHomOfficialCarharttWIP.png" width="375px" alt="home pagina van carhartt">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="detailpagina van een carhartt broek">
+  <img src="ScreenshotDetailpageCarharttWIPLandonPant.png" width="375px" alt="detailpagina van een carhartt broek">
  
 </details>
 
