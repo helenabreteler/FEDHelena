@@ -1,0 +1,333 @@
+:root {
+	/* startje */
+	--color-text:#262626;
+	--color-text2:#eee;
+	--color-text3:#8a8a8a;
+	--color-background:#eee;
+	--color-wit:#f1f1f1;
+	--color-detail:#3e53bb;
+	--color-header: #363636;
+
+	--link-color: #262626;
+ /* --link-visited-color: */
+    --link-background-color:#363636;
+    --link-active-color:#3e53bb;
+}
+
+
+@font-face {
+	font-family: KarlaRegular;
+	src: url(/fonts/Karla/static/Karla-Regular.ttf);
+}
+
+@font-face {
+	font-family: KarlaMedium;
+	src:url(/fonts/Karla/static/Karla-Medium.ttf)
+}
+
+@font-face {
+	font-family: KarlaBold;
+	src: url(/fonts/Karla/static/Karla-Bold.ttf);
+}
+
+@font-face {
+	font-family: KarlaLight;
+	src: url(/fonts/Karla/static/Karla-Light.ttf);
+}
+
+
+body {
+    font-family: KarlaRegular;
+}
+
+
+
+
+/* ****** */
+/* header */
+/* ****** */
+
+/* vlag *
+
+
+
+
+
+
+
+
+
+
+/* ************** */
+/****** main ******/
+/* ************** */
+
+main img:first-of-type {
+    width: 100vw;
+    height: auto;
+}
+
+
+/* broekkleur */
+main ul:nth-of-type(2) {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+main ul:nth-of-type(2) img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+
+/* *********** */
+/* add to card */
+/* *********** */
+
+
+main button:last-of-type {
+	background: none;
+	text-decoration: none;
+	border: none;
+	border-radius: 0.25em;
+
+	margin-top: 5em;
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+main button:last-of-type a {
+	font-family: KarlaMedium;
+	font-size: 1.2em;
+	color: var(--color-text2);
+	background-color: var(--color-header);
+	text-decoration: none;
+	
+	padding: 1em 2.5em;
+	margin: 1em 0em .5em 0em;
+	border-radius: 0.25em;
+}
+
+
+
+
+
+
+
+/* show product info */
+main a:first-of-type {
+    color: var(--color-text3);
+}
+
+
+
+
+
+
+/* **************************** */
+/* eerste scroll kledingstukken */
+/* **************************** */
+
+main ul:nth-of-type(3) {
+	/* jouw code hier */
+	display:flex;
+	gap:0.5em;
+	overflow:auto;
+	
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+
+	padding: 0;
+  }
+
+main ul:nth-of-type(3) li {
+	list-style: none;
+	flex-basis: min(80%, 10em);
+  	flex-shrink:0;
+  	
+  	gap:.25em;
+  
+  	display:flex;
+  	flex-direction:column;
+}
+
+main ul:nth-of-type(3) li img {
+	/* object-fit: cover; */
+    width: 100%;
+    height:min(100vw, 12em);
+	border-radius: 1em;
+	order: -1;
+}
+
+main ul:nth-of-type(3) li h3, p {
+    margin: .5em;
+    font-size: 1em;
+}
+
+
+/* **************************** */
+/* tweede scroll kledingstukken */
+/* **************************** */
+
+main ul:nth-of-type(4) {
+	/* jouw code hier */
+	display:flex;
+	gap:0.5em;
+	overflow:auto;
+	
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+
+	padding: 0;
+  }
+
+main ul:nth-of-type(4) li {
+	list-style: none;
+	flex-basis: min(80%, 10em);
+  	flex-shrink:0;
+  	
+  	gap:.25em;
+  
+  	display:flex;
+  	flex-direction:column;
+}
+
+main ul:nth-of-type(4) li img {
+	/* object-fit: cover; */
+    width: 100%;
+    height:min(100vw, 12em);
+	border-radius: 1em;
+    
+	order: -1;
+}
+
+
+
+
+
+
+
+
+
+/* ****** */
+/* footer */
+/* ****** */
+
+/* socials dingen */
+footer ul:first-of-type{
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-bottom:solid 1px var(--color-text3);
+}
+
+footer>ul:first-of-type li {
+	list-style: none;
+	margin: 0;
+	/* aspect-ratio: 1/1; */
+	width: 100%;
+	padding: 1.5em;
+	scale: 150%;
+	
+}
+
+footer ul:first-of-type li a {
+	/* background-color: red; */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: flex-start;
+	margin: 0;
+}
+
+footer form {
+	justify-content: center;
+}
+
+footer section:first-of-type ul {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom:solid 1px var(--color-text3);
+	margin-bottom: 10em;
+}
+
+
+
+footer section:first-of-type ul li a {
+	text-decoration: none;
+	color: #262626;
+	text-transform: uppercase;
+	font-size: 12px; /* bah */
+	font-family: KarlaMedium;
+	/* background-color: red; */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	/* align-items: center; */
+	padding: .75em 1em;
+}
+
+/* newsletter */
+footer form {
+	background-color: var(--color-detail);
+	
+	border-style: solid;
+	border: 1em;
+	
+	padding: 1em;
+	padding-left: auto;
+	padding-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+footer h4,
+footer form input {
+	width: min(100%, 20rem);
+}
+
+footer h4 {
+	color: var(--color-text2);
+	font-family: karlalight;
+	font-size: 0.875em;
+	margin: .75em;
+	margin-top: 0;
+}
+
+footer form input {
+	border-radius: .25em;
+	border-style: none;
+	border-width: .125em;
+	border-color: #000;
+	font-family: KarlaRegular;
+	padding:1em;
+	margin: .5em 0;
+}
+
+footer form input:nth-of-type(2) {
+	font-family: KarlaMedium;
+	color: var(--color-text2);
+	background-color: #000000;
+}
+
+/* logo gebeuren ding */
+footer section:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .5em;
+
+	padding: 2.5em 3.5em;
+
+	font-family: KarlaMedium;
+	font-size: .75em;
+	background-color: var(--color-background);
+}
