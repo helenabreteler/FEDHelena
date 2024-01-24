@@ -64,10 +64,3 @@ function sluitMenu() {
 
 
 
-// ADD TO BAG ///
-/* voor ruzie na klik */
-var ruzieNaKlik = document.querySelector("button:first-of-type[aria-label='na klik']");
-ruzieNaKlik.onclick = ruzieMaken;
-function ruzieMaken() {
-  ruzieNaKlik.classList.toggle("ruzie");
-}
