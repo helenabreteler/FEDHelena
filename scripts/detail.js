@@ -135,5 +135,10 @@ function createCaroCarrousel(carrouselID) {
 var ruzieNaKlik = document.querySelector("button:first-of-type[aria-label='na klik']");
 ruzieNaKlik.onclick = ruzieMaken;
 function ruzieMaken() {
-  ruzieNaKlik.classList.toggle("ruzie");
+  ruzieNaKlik.classList.add("ruzie");
+}
+
+ruzieNaKlik.onanimationend = klaarmetruzie;
+function klaarmetruzie() {
+    ruzieNaKlik.classList.remove("ruzie")
 }

@@ -458,27 +458,25 @@ main ul:nth-of-type(2) img {
 
 
 main button:last-of-type {
-	background: none;
+    display: block;
+
 	text-decoration: none;
 	border: none;
 	border-radius: 0.25em;
 
 	margin-top: 5em;
 	margin-bottom: 3em;
-	width: 100%;
-}
-
-main button:last-of-type a {
-	font-family: KarlaMedium;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 2.5em;
+	
+    font-family: KarlaMedium;
 	font-size: 1.2em;
 	color: var(--color-text2);
 	background-color: var(--color-header);
 	text-decoration: none;
-	
-	padding: 1em 2.5em;
-	margin: 1em 0em .5em 0em;
-	border-radius: 0.25em;
 }
+
 
 @keyframes ruzie-animation {
     0% {
@@ -493,15 +491,14 @@ main button:last-of-type a {
   /* de class ruzie wordt met JS toegevoegd (en weer verwijderd) */
   /* nb. de JS 3-stap heb je gratis gekregen */
   /* daar kun je natuurlijk nog wel even naar kijken */
-  button:first-of-type[aria-label="na klik"] {
+  button:first-of-type[aria-label="na klik"].ruzie {
     animation-name:ruzie-animation;
     animation-duration:.3s;
-    animation-iteration-count:infinite;
-  }
-  
-  button:first-of-type[aria-label="na klik"] {
+    animation-iteration-count:3;
     animation-direction:reverse;
+
   }
+
 
 
 
