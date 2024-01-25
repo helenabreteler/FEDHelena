@@ -290,10 +290,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. <!-- logo in header: svg copy van carhartt-wip.com -->
-  2. <!-- button in header: svg copy van carhartt-wip.com -->
-  3. <!-- alle foto's: carhartt-wip.com download -->
-  5. <!-- bron foto's : https://www.carhartt-wip.com/en/men-pants-work/simple-pant-blue-light-true-washed-1817_1 -->
-  6. <!-- bron code carrousels: https://codepen.io/shooft/pen/mdBOZLz -->
+  1. logo in header: svg copy van carhartt-wip.com
+  2. button in header: svg copy van carhartt-wip.com
+  3. alle foto's: carhartt-wip.com download
+  5. bron foto's : https://www.carhartt-wip.com/en/men-pants-work/simple-pant-blue-light-true-washed-1817_1
+  6. bron code carrousels: https://codepen.io/shooft/pen/mdBOZLz
 
 </details>
