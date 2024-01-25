@@ -274,6 +274,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Read.me opnieuw schrijven
   - header van detail pagina goed zetten
   - social media logos padding op li gezet ipv op de svg zelf. waardoor de website nog stukje kon scrollen naar de     zijkant.
+
+  <br> <br/>
+    ### de toegankelijkheids test: 
+    - de kopjes waren verkeerd genaamd
+    - de h1 werd meteen voorgelezen, maar dat was 'spring/ summer collectie' en niet de 'Carhartt WIP logo'. dus die moest anders benaamt worden met h2. de artikelen van h2 en h3 werden ook verkeerd genoemd doordat die niet bij elkaar horen en ik de h2 en h3 heb gebruikt als verder in de website niet als in volgorde. 
+    - de a11y moest toegevoegd worden aan h1 'carhartt wip website' boven aan de pagina, dat het duidelijk is voor de gebruiker op welke pagina die is. 
+    
+  
   
 </details>
 
