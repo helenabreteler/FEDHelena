@@ -80,7 +80,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/sshomepagehelena.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/DetailpaginaNAVHelena127.0.0.1.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/nav127.0.0.1" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
 
