@@ -176,13 +176,11 @@ header nav ul:first-of-type li:nth-of-type(1){
 header nav ul:nth-of-type(2){
 	display: flex;
 	flex-direction: column;
-	
 }
 
 header nav ul:last-of-type {
 	display: flex;
 	flex-direction: row;
-	
 }
 
 
@@ -423,7 +421,10 @@ nav section:last-of-type {
 
 
 
-
+/* broek stof */
+main ul:nth-of-type(2) {
+    list-style: none;
+}
 
 
 

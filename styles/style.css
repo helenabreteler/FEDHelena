@@ -617,7 +617,7 @@ footer>ul:first-of-type li {
 	/* aspect-ratio: 1/1; */
 	width: 100%;
 	padding: 1.5em;
-	scale: 150%;
+	
 	
 }
 
@@ -629,6 +629,10 @@ footer ul:first-of-type li a {
 	align-items: center;
 	justify-items: flex-start;
 	margin: 0;
+}
+
+footer ul:first-of-type li svg {
+	scale: 150%;
 }
 
 footer form {
